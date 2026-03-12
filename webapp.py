@@ -31,12 +31,12 @@ def policies():
 # route for keeping main goal in mind as a CISO within the Organisation
 @app.route('/CISOs_purpose')
 def CISOs_purpose():
+    return "These are the CISOs to be aware of."
 
 
 # route for Organisation's assets
 @app.route('/assets')
 def assets():
-
     return "This is a list of all assets: budget etc."
 
 # route for threat vectors
@@ -52,6 +52,7 @@ def incidents():
 # route for reports
 @app.route('/reports')
 def reports():
+    return "This is a list of all reports that have occurred."
 
 @app.route('/industry/<sector>')
 def industry_risks(sector):
