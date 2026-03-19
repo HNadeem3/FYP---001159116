@@ -33,27 +33,22 @@ def policies():
 def CISOs_purpose():
     return "These are the CISOs to be aware of."
 
-
-# route for Organisation's assets
-@app.route('/assets')
-def assets():
-    return "This is a list of all assets: budget etc."
+# route for Organisation's assets (budget, email server security, customer details database, employee login credentials )
+@app.route('/assets/<category>')
+def assets(category):
+    return f"This is a list of all assets: {category}"
 
 # route for threat vectors
-@app.route('/threats')
-def threats():
-    return "This is a list of all threat vectors: Malware, Phishing and Email"
+@app.route('/threats/<category>/<vector_name>')
+def threats(category, vector_name):
+    return f"This is a list of all {category}: {vector_name} Malware, Phishing and Email"
 
 # route for incidents
-@app.route('/incidents')
-def incidents():
-    return "This is a list of all incidents that have occurred."
+@app.route('/report/<incidents>')
+def report(incidents):
+    return f"This is a list of all incidents that have occurred."
 
-# route for reports
-@app.route('/reports')
-def reports():
-    return "This is a list of all reports that have occurred."
-
+#route for SME sector.
 @app.route('/industry/<sector>')
 def industry_risks(sector):
     return f"Showing risks for {sector} sector"
@@ -61,7 +56,7 @@ def industry_risks(sector):
 # route to display on homepage
 @app.route('/user/<name>')
 def show_user(name):
-    return f"Hello, {name}! This is your personalized page."
+    return f"Hello, {name}! This is your personalised page."
 
 # runs app and checks errors
 if __name__ == '__main__':
