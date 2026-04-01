@@ -34,6 +34,19 @@ Product Development:
 22/01/26:
 Designing a Web App that will consolidate information from LLMs for CISOs to use.
 
+Websites that were used to help code the back-end:
+
+How to Build a Flask Python Web Application from Scratch
+Quickstart — Flask Documentation (3.1.x)
+Using Path Parameters in Dynamic Routes | CodeSignal Learn
+12.10. Appendix: Flask Route Reference — Programming for Financial Technology
+GitHub - 23Edu4rd0/Ia-Gemini
+23Edu4rd0/Ia-Gemini: IA criada para trabalho do curso, desenvolvida usando gemini e python
+logankilpatrick/gemini-api-quickstart: Get up and running in under 5 minutes with the Google AI Gemini API (in Python)
+Gemini API quickstart  |  Google AI for Developers
+Building Efficient Flask POST APIs: Tips & Debugging Guide
+
+
 
 Project Log:
 22/01/26:
